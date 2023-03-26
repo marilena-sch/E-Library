@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="admin">
+       <h2 id="h2">Admin Page</h2> 
+        <div id="admin_buttons">
+            <button id="see_users" class="admin_btn" onclick="get_students();get_librarians()">See Users</button>
+          <button id="delete_user" class="admin_btn"  onclick="show_del_user()">Delete User</button>
+          <button id="see_statistics" class="admin_btn" onclick="get_stat()">See Statistics</button><br>
+         </div>
+         <div id="deletion" style="display: none">
+            <form id ="deldel" name="deldel" onsubmit="delete_user();return false;">
+                <label for="del_user">Username:</label><br>
+                <input id="del_user" name="del_user" type="text"><br>
+                <input type="submit" class="admin_btn" value="Delete"><br>
+            </form>
+        </div>
+       
+        <div id="stat_buttons" style="display: none">
+           <button id="books_per_lib" class="admin_btn" onclick="print_stat('bk_lb')">Books/<br>Libraries</button>
+           <button id="books_per_genre" class="admin_btn" onclick="print_stat('bk_gn')">Books/<br>Genre</button>
+           <button id="users_per_type" class="admin_btn" onclick="print_stat('stud')">Users/<br>Type</button>
+            <div id ="stat_result"></div>
+        </div>
+       <h3 id="studs" style="text-align: center; display: none">Students</h3>
+        <div id="admin_out"></div><br>
+        <h3 id="libs" style="text-align: center; display: none">Librarians</h3>
+        <div id="admin_out_lib"></div>
+        </div>
+        
+    </body>
+</html>

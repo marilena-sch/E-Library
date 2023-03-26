@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+            <title>Sign-in</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+    <body>
+            <div id="sign_in">
+                <form id="loginForm" name="loginForm" onsubmit='CheckUser();return false;'>
+       <h2 id="h2">Admin Sign-In</h2> 
+            <div class="row" id="sign_in_admin">
+                <div class="column column1Width" id="choices">           
+                        <label for="user_username">Username:</label><br>
+                        <input type="text"  id="user_username" name="user_username" required><br>
+                        <label for="user_password">Password:</label><br>
+                        <input type="password"  name="user_password" id="user_password" required><br>
+                        <input type="submit" class="button" id="sign-in-btn" value="Login">
+                </div>
+            </div>
+                </form>
+            <br>
+            </div>
+    </body>
+</html>

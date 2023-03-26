@@ -1,0 +1,69 @@
+
+    <!DOCTYPE html>
+    
+    <html class="no-js">
+        <head>
+            <title>Sign-in</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="js/PasswordCheck.js"></script>
+            <script src="js/PasswordStrength.js"></script>
+            <script src="js/UserOption.js"></script>
+            <script src="js/Checkbox.js"></script>
+            <script src="js/Map.js"></script>
+            <link rel="stylesheet" href="css/style.css">
+            <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+            <script src="https://www.gstatic.com/charts/loader.js"></script>
+            <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">--> 
+            <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+            <script src="js/ajax.js" defer></script>
+            <script src="js/ajaxREST.js" defer></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+        <body>
+            <div id="result" style="text-align: center;"></div>
+            <div id="ajaxContent"></div>
+            <div id="guestresult"></div>
+            <div id="ajaxData"></div>
+            <div id="ajaxRest"></div>
+            <div id="admin_div" style="margin-top: 20px">
+                <button id="sign" class="sign" onclick='admin_sign_in_btn();'>Admin</button>
+            </div>
+            <div id="sign_div">
+                <h4 style="text-align: center;">If you are already registered SIGN IN!</h4>
+                <button id="sign" class="sign" onclick='sign_in_btn();'>Sign In</button>
+            </div>
+            <div id="register_div">
+                <h4 style="text-align: center;">If you don't have an account REGISTER!</h4>
+                <button id="register" onclick='register_btn();'>Register</button>
+            </div>
+            <div id="guest_div">
+                <h4 style="text-align: center;">Explore as a guest</h4>
+                <button id="register" onclick='guest_btn();'>Guest</button>
+                <button  id="show_guest_books" onclick="show_all_books()" type="button" style="display:none">Show Available Books</button>
+                <button  id="search_guest" onclick="open_guest_search();" type="button" style="display:none">Search by Category</button>
+            <div id="div_search_guest" style="display:none">
+                <h3 >Get Books by Genre</h3>
+                <label for='genre_id'>Book Genre:</label><br>
+                <input id="genre_id" type="text" name="genre_id"><br>
+                <button type="button" onclick="getBooksByGenreOnly()" class="addbook_button" >Get Books</button>
+            </div>
+            </div>
+<!--            <div id="attack_div">
+                <button id="register" onclick='newhtml_btn();'>Test Attack</button>
+            </div>-->
+<!--            <div id="library_div">
+                <h4 style="text-align: center;">Visit out E-Libray!</h4>
+                <button id="register" onclick='library_btn();'>E-Library</button>
+            </div>-->
+        <footer id="footer">
+            <a href="https://www.uoc.gr/" target="_blank"><img src="./img/uoc.jpg" border="0" alt="Πανεπιστήμιο Κρήτης" id="image_footer"/></a>
+            <a href="https://hmu.gr/" target="_blank"><img src="./img/elmepa.jpg" id="image_footer" border="0" alt="ΕΛΜΕΠΑ"/></a>
+            <a href="https://www.tuc.gr/index.php?id=4992" target="_blank"><img src="./img/tuc.png" id="image_footer" border="0" alt="Πολυτεχνείο Κρήτης"/></a>
+            <a href="https://www.greekbooks.gr/?utm_campaign=brand&utm_source=googleads&utm_medium=cpc&gclid=Cj0KCQiA5NSdBhDfARIsALzs2EBLqOL1BxKiIibdIS-3fQ6qUBHMgNCnVo-BPauyeuVrTx1aRut4Lj8aAm_KEALw_wcB" target="_blank"><img src="./img/greekbooks.png" id="image_footer" border="0" alt="Βιβλιοπωλείο"/></a>
+            <a href="https://www.cup.gr/" target="_blank"><img src="./img/ekdoseis.png" id="image_footer" border="0" alt="Πανεπιστημιακές Εκδόσεις Κρήτης"/></a>
+            <a href="https://www.abebooks.com/" target="_blank"><img src="./img/abe.png" border="0" alt="AbeBooks" id="image_footer"/></a>
+        </footer>
+        </body>
+    </html>
+    
+    

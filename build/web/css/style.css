@@ -1,0 +1,390 @@
+/*main structure of body*/
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(238,236,174);
+    background: radial-gradient(circle, rgba(238,236,174,1) 0%, rgba(213,168,104,1) 100%); 
+    /*overflow-x: hidden;*/
+    border: 3px solid palegoldenrod;
+    border-radius: 8px;
+
+}
+
+/* style for all inputs */
+input[type=text], input[type=password], input[type=email],input[type=date]{
+    width: 15%;
+    padding: 10px 10px;
+    margin: 3px 0;
+    display: inline-block;
+}
+/*characteristics for submit button*/
+.submitbtn {
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    font-weight: bold;
+}
+
+table{
+    
+    text-align: center;
+    background-color: rgb(179, 162, 116);    
+    border-radius: 8px;
+    border: palegoldenrod solid;
+} 
+
+
+/*hover for submit button */
+button:hover {
+    opacity: 0.6;
+    color:seashell;
+
+}
+
+button{
+    border-radius: 7px;
+
+}
+
+/*structure for avatar image*/
+.image {
+    position: relative;
+    left: 40.5%;
+    margin: 24px 0 12px 0;
+}
+
+.container{
+    position: relative;
+    left: 42.5%;
+}
+
+#sign{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#back{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#sign_in{
+    text-align: center;
+}
+
+
+#sign-in-btn{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    width: 120px;
+    height: 60px;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    /*left: 47%;*/
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px
+}
+
+#logout-btn{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    width: 120px;
+    height: 60px;
+    /*margin-bottom: 10px;*/
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px
+}
+
+#register{
+    background-color: rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#show_guest_books{
+    background-color: rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#search_guest{
+    background-color: rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#h4{
+    text-align: center;
+}
+
+#student_data{
+    position: relative;
+    left: 40%;
+}
+
+#librarian_data{
+    position: relative;
+    left: 5%;
+}
+
+.update_button{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+}
+
+#restForm{
+    position: relative;
+    left: 42.5%;
+}
+
+#div{
+  position: relative;
+    left: 42.5%;  
+}
+
+#div_search_guest{
+  position: relative;
+    left: 42.5%;  
+}
+
+.addbook_button{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    width: 100px;
+    height: 60px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#admin{
+    text-align: center;
+}
+
+.admin_btn{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    font-weight: bold;
+    position: relative;
+    left: -30px;
+    height: 60px;
+}
+
+#admin_out{
+    font-size: 13px;
+}
+
+#admin_out_lib{
+    font-size: 13px;
+}
+
+
+#stat_result{
+    text-align: center;
+}
+
+#piechart_3d{
+    text-align: center;
+}
+
+#student_buttons{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#librarian_buttons{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#isbn_avail{
+ text-align: center;   
+}
+
+#update_output{
+   text-align: center;  
+}
+
+#lib_output{
+   text-align: center; 
+}
+
+#search{
+   position: relative;
+   left: 650px;
+}
+
+#select{
+   position: relative;
+   left: 650px;
+}
+
+#return{
+   position: relative;
+   left: 650px;
+}
+
+#review{
+   position: relative;
+   left: 650px;
+}
+
+#sort-btn{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    width: 120px;
+    height: 80px;
+    /*margin-bottom: 10px;*/
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px
+}
+
+.select-btn{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    width: 120px;
+    height: 80px;
+    /*margin-bottom: 10px;*/
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    position: relative;
+    left: 47%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px
+}
+
+#guestresult{
+    font-size: 13px;
+}
+
+#footer{
+    width: 1520px;
+    margin-top: auto;
+}
+
+#image_footer{
+    height: 100px;
+    width: 248px;
+}
+
+#buttons{
+    position: relative;
+   left: 680px;
+}
+
+#lib_output{
+    text-align: center;
+}
+
+.accept-btn{
+    background-color:rgb(179, 162, 116);
+    color:black;
+    padding: 15px 20px;
+    /*margin-left: 50px;*/
+    /*display:inline ;*/
+    width: 120px;
+    height: 70px;
+    /*margin-bottom: 10px;*/
+    border: none;
+    cursor: pointer;
+    /*width: 7%;*/
+    position: relative;
+    left: 300px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px
+}
